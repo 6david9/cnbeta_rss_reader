@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require_relative 'rss.rb' 
+RssTerminal.run! 'http://www.cnbeta.com/rss'
