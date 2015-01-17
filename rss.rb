@@ -90,10 +90,10 @@ class RssTerminal
 		rss_manager = RssManager.new(f)
 		f.close
 
-		loop do
+		# 先显示 READ_COUNT 行
+		rss_manager.show_next_page(READ_COUNT)
 
-			# 先显示 10 行
-			rss_manager.show_next_page(READ_COUNT)
+		loop do
 
 			printf "options: "
 
